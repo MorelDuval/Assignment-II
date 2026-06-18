@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="style.css"> <!--This part is use to link my html and my css-->
+</head>
+<body>
+    <main class="container">
+        <form class="contact-form">
+           <strong><h1>Contact Us</h1></strong> <!--This h1 is for the title-->
+
+            <div class="form-row"> <!--This div is for both the First name and last name input-->
+                <div class="form-group">
+                    <label for="first-name">First Name </label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name </label>
+                    <input type="text" id="last-name" required>
+                </div>
+            </div>
+            
+            <!--This div is for the email address-->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <!--This div is for my query type-->
+            <div class="form-group">
+                <label>Query Type</label>
+                <div class="radio-group">
+                    <label class="radio-card">
+                        <input type="radio" name="query" value="general"> General Enquiry
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="query" value="support"> Support Request
+                    </label>
+                </div>
+            </div>
+
+            <!--This div is for my textarea(message)-->
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+
+            <!--This div is for the small check box you will see on my output-->
+            <div class="consent-group">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">I consent to being contacted by the team *</label>
+            </div>
+
+            <!--This part is just for the button thet you see at the end of the website-->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
